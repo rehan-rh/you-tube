@@ -4,14 +4,14 @@ import { useDispatch } from "react-redux";
 
 const Head = () => {
   const dispatch = useDispatch();
-  const toggleMenuHandleer = () => {
+  const toggleMenuHandler = () => {
     dispatch(toggleMenu());
   };
   return (
     <div className="grid grid-flow-col p-5 m-2 shadow-lg">
       <div className="flex col-span-1">
         <img
-          onClick={() => toggleMenuHandleer()}
+          onClick={() => toggleMenuHandler()}
           className="h-8 cursor-pointer"
           alt="menu"
           src="https://www.flowmatters.com/wp-content/uploads/2022/09/Hamburger-menu-1024x512.png"
